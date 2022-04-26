@@ -12,12 +12,6 @@
 
 `\db`: Nesta pasta está o arquivo `conexao.php`, responsável por acessar o banco de dados.
 
-`\funcoes`: Nesta pasta há uma subpasta para cada cadastro do sistema (carros, cores, clientes, etc). Cada pasta contém os seguintes arquivos:
-
-- `excluir.php`: Recebe o código do objeto e executa um DELETE no banco de dados para removê-lo.
-- `editar.php`: Recebe os dados do objeto e executa um UPDATE um banco de dados para atualizá-lo.
-- `cadastrar.php`: Recebe os dados do objeto e executa um INSERT no banco de dados para inserí-lo na respectiva tabela.
-
 `\paginas`: Nesta pasta há uma subpasta para cada cadastro do sistema (carros, cores, clientes, etc), contendo as páginas para cada operação do CRUD de cada item. Em cada subpasta existem os seguintes arquivos:
 
 - `listagem.php`: Página de listagem de cada item o sistema. 
