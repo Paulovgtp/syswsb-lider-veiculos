@@ -1,16 +1,22 @@
-# SysWSB - Sistema de Venda de Veículos
+# Locare - Sistema de Locadora de Veículos em PHP
 
-## Tecnologias:
+## Tecnologias utilizadas
 
 - Linguagem PHP
 - Banco de dados MySQL
 - Bootstrap para estilizar as páginas
 
-## Estrutura do projeto:
+## Estrutura do projeto
 
 `index.php`: Arquivo principal que contém o layout da aplicação e é responsável por abrir as páginas internas de cada funcionalidade de acordo com o parâmetro passado na URL.
 
 `\db`: Nesta pasta está o arquivo `conexao.php`, responsável por acessar o banco de dados.
+
+`\funcoes`: Nesta pasta há uma subpasta para cada cadastro do sistema (carros, cores, clientes, etc). Cada pasta contém os seguintes arquivos:
+
+- `excluir.php`: Recebe o código do objeto e executa um DELETE no banco de dados para removê-lo.
+- `editar.php`: Recebe os dados do objeto e executa um UPDATE um banco de dados para atualizá-lo.
+- `cadastrar.php`: Recebe os dados do objeto e executa um INSERT no banco de dados para inserí-lo na respectiva tabela.
 
 `\paginas`: Nesta pasta há uma subpasta para cada cadastro do sistema (carros, cores, clientes, etc), contendo as páginas para cada operação do CRUD de cada item. Em cada subpasta existem os seguintes arquivos:
 
